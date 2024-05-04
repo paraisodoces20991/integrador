@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./estilomenu.css" />
+    <link rel="stylesheet" href="./estiloentrar.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BULMA -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+  </head>
+
+  <body>
+    <!--imagem central-->
+     <!--imagem central-->
+     <header>
+
+      <!--botoes de usuarios-->
+
+      <nav class="nav">
+          <a href="index.html"> <img class="tipo" src="logotipo.png"></a>
+          <button class="hamburger"></button>
+          <ul class="nav-list">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="cadastro.html">Cadastro</a></li>
+              <li><a href="entrar.html">Fazer Login</a></li>
+          </ul>
+      </nav>
+
+
+  </header>
+  <!-- botoes de navegação-->
+    <br />
+    <br />
+    <br />
+
+    <div class="tudo">
+      <div class="espaco">
+        <br />
+        <h1 class="titulo">Login</h1>
+        <br />
+        <form>
+          <input type="text" placeholder="Usuario" class="caixa" />
+
+          <input type="password" placeholder="Senha" class="caixa" />
+
+          <input type="submit" value="Entrar" class="sub" />
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+          <p>
+              <strong>Site</strong> by <a href="https://jgthms.com"> Hextech</a>.
+              The source code is licensed
+              <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
+              website content is licensed
+              <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          </p>
+      </div>
+  </footer>
+
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.querySelector(".nav");
+
+      hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+
+  </script>
+  </body>
+</html>

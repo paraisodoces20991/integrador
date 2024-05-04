@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./estilomenu.css" />
+  <link rel="stylesheet" href="./estilocadastro.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- BULMA -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" />
+</head>
+
+<body>
+  <div id="tudo">
+    <header>
+
+      <!--botoes de usuarios-->
+
+      <nav class="nav">
+          <a href="index.html"> <img class="tipo" src="logotipo.png"></a>
+          <button class="hamburger"></button>
+          <ul class="nav-list">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="cadastro.html">Cadastro</a></li>
+              <li><a href="entrar.html">Fazer Login</a></li>
+          </ul>
+      </nav>
+
+
+  </header>
+    <br />
+    <br />
+
+    <div id="container1">
+      <div class="cad">
+        <h1 class="styletitle">Cadastro</h1>
+      </div>
+      <br />
+      <!--espaços de cadastro-->
+      <div id="form">
+        <form class="dadosp">
+          <input class="dn" id="" type="text" placeholder="First Name" />
+          <br />
+          <input class="dn" id="c" type="nnumber" placeholder="CPF" /> <br />
+          <input class="dn" id="e" type="email" placeholder="Email" /><br />
+          <input class="dn" id="p" type="password" placeholder="Password" />
+          <br />
+        </form>
+        <div class="espaço">
+          <h2 class="stylesub">
+            <p>Genero</p>
+          </h2>
+
+          <br />
+          <form class="gender">
+            <input type="radio" name="genero" value="masculino" />
+            <label for="Masculino">Masculino</label>
+
+            <br />
+            <input type="radio" name="genero" value="feminino" />
+            <label for="Feminino">Feminino</label>
+            <br />
+            <input type="radio" name="genero" value="outro" />
+            <label for="Outro">Outro</label>
+          </form>
+        </div>
+        <br />
+
+        <div class="espaço">
+          <h2 class="stylesub">
+            <p>Data de nascimento</p>
+          </h2>
+          <input id="date" type="date" placeholder="dd/mm/aaaa" /> <br />
+          <br />
+          <h2 class="stylesub">
+            <p>Nacionalidade</p>
+          </h2>
+
+          <select id="pais" name="nacionalidade">
+            <option value="Br">Brasil</option>
+            <option value="Ru">Russia</option>
+            <option value="Usa">EUA</option>
+            <option value="Es">Espanha</option>
+            <option value="Ch">China</option>
+          </select>
+        </div>
+        <br /><br />
+      </div>
+      <div class="espaço">
+        <input class="sub" id="n" type="submit" value="Cadastrar" />
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            <strong>Site</strong> by <a href="https://jgthms.com"> Hextech</a>.
+            The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
+            website content is licensed
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+    </div>
+</footer>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const nav = document.querySelector(".nav");
+
+    hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+
+  </script>
+
+</body>
+
+</html>

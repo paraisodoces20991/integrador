@@ -1,0 +1,23 @@
+/* estilo do header*/
+.logo {
+  text-align: center;
+  background-color: #f8be62;
+}
+
+.tipo {
+  width: 150px;
+  height: 100px;
+}
+
+/* estilo dos botoes de navegação*/
+.stylenav {
+  border: none;
+  width: 140px;
+  height: 100%;
+  font-size: 15px;
+  color: #924949;
+}
+.stylenav:hover {
+  background-color: #f50f0f;
+  color: white;
+}
